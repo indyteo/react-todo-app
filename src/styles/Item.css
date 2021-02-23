@@ -6,6 +6,8 @@
 	transition: .1s;
 }
 
+.item-checkbox:hover,
+.item-delete:hover,
 .item-completed .item-checkbox {
 	color: #af7eeb;
 }
@@ -19,20 +21,33 @@
 .item-checkbox {
 	padding: 0 10px;
 	cursor: pointer;
+	transition: .1s;
 }
 
 .item-title {
 	flex: 1;
-	padding: 0 25px;
+	padding: 0 5px;
+	margin: 0 20px;
 	cursor: text;
-	border: none;
+	border: 3px solid transparent;
 	background-color: transparent;
 	outline: none;
 	color: inherit;
+	border-radius: 6px;
+	transition: .1s;
 }
 
 .item-title::placeholder {
 	font-style: italic;
+}
+
+.item-title:hover,
+.item-title:focus {
+	border-color: rgba(175, 126, 235, .5);
+}
+
+.item-title:focus {
+	background-color: white;
 }
 
 .item-delete {

@@ -5,6 +5,38 @@
 }
 
 .header-title {
-	padding: 10px;
+	padding-bottom: 5px;
 	font-weight: 600;
+	margin: 10px;
+	font-size: 2em;
+	border: 3px solid transparent;
+	background-color: transparent;
+	outline: none;
+	border-radius: 6px;
+	text-align: center;
+	color: white;
+	transition: .1s;
+}
+
+.header-title:hover,
+.header-title:focus {
+	border-color: rgba(255, 255, 255, .75);
+}
+
+.header-title:focus {
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.git-icon {
+	position: absolute;
+	right: 14px;
+	color: white;
+	padding: 10px;
+	transition: .5s;
+	outline: none;
+}
+
+.git-icon:hover {
+	color: white;
+	transform: rotateZ(-180deg);
 }
