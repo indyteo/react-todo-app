@@ -1,0 +1,32 @@
+.items-list {
+	background-color: white;
+	box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+	color: #929cbd;
+	padding: 50px;
+}
+
+.items-empty {
+	opacity: .75;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 10px 0;
+	margin-bottom: 11px;
+}
+
+.item-add {
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(50%);
+	font-size: 2em;
+	background-color: #af7eeb;
+	color: white;
+	padding: 5px 25px 13px;
+	border-radius: 30px;
+	box-shadow: 0 0 20px #af7eeb;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.item-add:hover {
+	box-shadow: 0 0 0 #af7eeb;
+}

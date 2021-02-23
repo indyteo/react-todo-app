@@ -1,0 +1,52 @@
+.item {
+	margin: 5px 0;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	transition: .1s;
+}
+
+.item-completed .item-checkbox {
+	color: #af7eeb;
+}
+
+.item-completed .item-title {
+	text-decoration: line-through #e0e5fb;
+	text-decoration-thickness: 3px;
+	text-decoration-width: 3px;
+}
+
+.item-checkbox {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.item-title {
+	flex: 1;
+	padding: 0 25px;
+	cursor: text;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	color: inherit;
+}
+
+.item-title::placeholder {
+	font-style: italic;
+}
+
+.item-delete {
+	padding: 0 10px;
+	cursor: pointer;
+	opacity: 0;
+	transition: .1s;
+}
+
+.item:hover,
+.item:focus-within {
+	background-color: rgba(227, 233, 255, .5);
+}
+
+.item:hover .item-delete {
+	opacity: 1;
+}

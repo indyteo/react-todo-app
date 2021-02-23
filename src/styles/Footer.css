@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 1em;
+    font-style: italic;
+    color: #929cbd;
+}
+
+.footer a {
+    color: #af7eeb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.footer a:hover {
+    text-shadow: 0 0 5px #af7eeb;
+}
